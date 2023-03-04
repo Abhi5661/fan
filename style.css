@@ -126,15 +126,4 @@
   }
 }
 
-.active {
-  background-color: yellow;
-}
 
-
-
-@media screen and(max-width: 400px) {
-    .fan {
-        width: 400px;
-    }
-    
-}
