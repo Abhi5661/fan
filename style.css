@@ -1,0 +1,131 @@
+.fan {
+  width: 500px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  position: relative;
+}
+
+.fan-mid {
+  width: 70px;
+  height: 70px;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 215px;
+  animation: startfan;
+}
+
+.fan-blade1,
+.fan-blade2,
+.fan-blade3 {
+  width: 80px;
+  height: 150px;
+  background-color: black;
+  margin-top: 0;
+  margin-left: 0;
+  top: 10px;
+  transform-origin: bottom;
+  border-radius: 20px;
+}
+
+.fan-blade1 {
+  margin-top: -150px;
+  margin-right: 0px;
+  transform: rotate(0deg);
+}
+
+.fan-blade2 {
+  margin-top: -110px;
+  margin-left: 30px;
+  transform: rotate(120deg);
+}
+
+.fan-blade3 {
+  margin-top: -160px;
+  margin-left: -40px;
+  transform: rotate(240deg);
+}
+
+.fan-stand {
+  width: 30px;
+  height: 290px;
+  position: absolute;
+  background-color: black;
+  margin-top: 250px;
+  margin-left: 235px;
+}
+
+.fan-base {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 530px;
+  margin-left: 200px;
+}
+
+.speed {
+  margin-top: 130px;
+  position: absolute;
+  color: rgb(255, 255, 255) !important;
+  font-size: 20px;
+}
+
+#off,
+#one,
+#two,
+#three {
+  color: white;
+  background-color: rgb(29, 32, 32);
+  text-align: center;
+  margin: 2px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+#off {
+  background-color: red;
+}
+
+@keyframes startfan {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(36deg);
+  }
+  20% {
+    transform: rotate(72deg);
+  }
+  30% {
+    transform: rotate(108deg);
+  }
+  40% {
+    transform: rotate(144deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  60% {
+    transform: rotate(216deg);
+  }
+  70% {
+    transform: rotate(252deg);
+  }
+  80% {
+    transform: rotate(288deg);
+  }
+  90% {
+    transform: rotate(224deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.active {
+  background-color: yellow;
+}
